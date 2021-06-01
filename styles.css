@@ -12,10 +12,17 @@ body {
   color: hsl(0, 0%, 100%);
 }
 .card-image {
-  background: hsl(277, 64%, 61%);
+  background-color: hsl(277, 64%, 61%);
+  background-image: url("./images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 300px;
 }
 .card-image > img {
-  opacity: 0.7;
+  opacity: 0.5;
+  object-fit: contain;
 }
 span {
   color: hsl(277, 64%, 61%);
@@ -63,6 +70,7 @@ h2 {
   .card-image {
     order: 2;
     width: 50%;
+    height: inherit;
   }
   .card-body {
     width: 50%;
